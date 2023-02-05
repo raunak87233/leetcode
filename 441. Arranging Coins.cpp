@@ -1,4 +1,7 @@
-int arrangeCoins(int n) {
+class Solution {
+public:
+    int arrangeCoins(int n) {
+        
         int level = 0, coin = 1;
         while (n >= coin) {
             n -= coin;
@@ -7,3 +10,6 @@ int arrangeCoins(int n) {
         }
         return level;
     }
+        
+    
+};
